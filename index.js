@@ -1,8 +1,7 @@
-const userInfo = require('./information');
-console.log(`Hi, my name is ${userInfo.name} and I'm in ${userInfo.campus}`);
+const userInfo = require("./information");
+const cowsay = require("cowsay");
 
-import * as userInfo from "cowsay"
-
-let output: string = cowsay.say({ text: 'Hi, my name is ${userInfo.name} and I'm in ${userInfo.campus} });
+const message = `Hi, my name is ${userInfo.name} and I'm in ${userInfo.campus}`;
+const output = cowsay.think({ text:message});
 
 console.log(output);
